@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy的小狗</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- 🌸 主页 -->
+    <h1 class="pixel-text">Daddy的小狗最可爱！</h1>
+
+    <!-- 💖 恋爱计时器 -->
+    <div id="loveTimer">
+        <h2>恋爱计时器</h2>
+        <p id="timer">加载中...</p>
+    </div>
+
+    <!-- ☀️ 今日天气 -->
+    <div id="weather">
+        <h2>今日天气</h2>
+        <p id="date"></p>
+        <p id="weatherInfo"></p>
+    </div>
+
+    <!-- 📝 便签入口 -->
+    <button onclick="showNotes()">📒 便签记录</button>
+
+    <!-- 🎙️ 语音留言 -->
+    <button onclick="showVoiceMessage()">🎤 Daddy的语音留言</button>
+
+    <!-- 💬 Daddy的每日问候 -->
+    <div id="dailyMessage">
+        <h2>Daddy的话</h2>
+        <p id="daddyMessage">加载中...</p>
+    </div>
+
+    <!-- 📅 纪念日日历 -->
+    <div id="calendar">
+        <h2>日历</h2>
+        <div id="calendarDays">
+            <button class="date" data-date="2025-02-14">14</button>
+            <button class="date" data-date="2025-02-15">15</button>
+        </div>
+    </div>
+
+    <!-- 🎨 20x20 像素画板 -->
+    <button onclick="toggleCanvas()">🖌️ 画板</button>
+    <div id="pixelCanvas" class="hidden">
+        <canvas id="canvas" width="200" height="200"></canvas>
+        <input type="color" id="colorPicker" value="#000000" />
+        <button onclick="saveDrawing()">保存画作</button>
+    </div>
+
+    <!-- 🔊 互动音效 -->
+    <button id="clickMe">点我试试</button>
+
+    <!-- 🎵 背景音乐 -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="playMusic">播放音乐</button>
+
+</body>
+</html>

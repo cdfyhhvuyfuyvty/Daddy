@@ -1,0 +1,40 @@
+/* 🌸 全局像素风 */
+body {
+    font-family: "Press Start 2P", cursive;
+    background-color: #fce4ec;
+    text-align: center;
+}
+
+/* 🎀 主要内容 */
+#loveTimer, #weather, #dailyMessage, #calendar, #pixelCanvas {
+    background: #ffccbc;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* 🎨 画板隐藏 */
+.hidden {
+    display: none;
+}
+
+/* 🖱️ 按钮 */
+button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ff80ab;
+    border: 2px solid #ff4081;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* 🎤 语音留言 */
+#voiceMessage {
+    background: #d1c4e9;
+    padding: 15px;
+    border-radius: 10px;
+}
